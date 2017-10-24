@@ -1,0 +1,2 @@
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes.UWP\imagenes.UWP.csproj;x86
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\imagenes.csproj;neutral

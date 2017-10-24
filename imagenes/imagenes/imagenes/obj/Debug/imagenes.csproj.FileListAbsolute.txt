@@ -1,0 +1,50 @@
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.MainPage.xaml.g.cs
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.App.xaml.g.cs
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.DetailPageBD.xaml.g.cs
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.InsertPage.xaml.g.cs
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.SelectedPage.xaml.g.cs
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\obj\Debug\imagenes.pdb
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\imagenes.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\imagenes.pdb
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\SQLite-net.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\SQLite-net.pdb
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\SQLite-net.xml
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Gustavo\source\repos\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.MainPage.xaml.g.cs
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.App.xaml.g.cs
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.DetailPageBD.xaml.g.cs
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.InsertPage.xaml.g.cs
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.SelectedPage.xaml.g.cs
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\obj\Debug\imagenes.pdb
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\imagenes.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\imagenes.pdb
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\SQLite-net.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\SQLite-net.pdb
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\SQLite-net.xml
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Gustavo\Desktop\respaldo practica antes de\imagenes\imagenes\imagenes\bin\Debug\Xamarin.Forms.Xaml.xml

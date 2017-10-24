@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:imagenes"
+             x:Class="imagenes.MainPage">
+    
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Azure" >
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+            <!--  <Label Text="Bienvenido al Tecnologico de Estudios Superiores de Huixquilucan" FontSize="25" BackgroundColor="Green"></Label>-->
+            <Label Text="Agregar Usiario" IsEnabled="True"></Label>
+            <Button Text="➕" Clicked="Insertar_Clicked"/>
+            <Label Text="Ver Registros" IsEnabled="True"></Label>
+            <Button Text="🔎" Clicked="Button_Clicked"/>
+
+<!--chido-->
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

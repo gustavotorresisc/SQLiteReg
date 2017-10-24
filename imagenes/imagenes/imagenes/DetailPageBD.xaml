@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="imagenes.DetailPageBD">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Usuarios Registrados" FontSize="50" BackgroundColor="Red" TextColor="Azure"/>
+            <ListView ItemsSource="{Binding Items}" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                    <RowDefinition Height="40"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <Label Text="NOMBRE" Grid.Column="0" Grid.Row="0"/>
+                                <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="0"/>
+                                
+                                    
+                                <Label Text="APELLIDOS" Grid.Column="0" Grid.Row="1"/>
+                                <Label Text="{Binding Apellidos}" Grid.Column="1" Grid.Row="1"/>
+                                
+                                <Label Text="DIRECCION" Grid.Column="0" Grid.Row="2"/>
+                                <Label Text="{Binding Direccion}" Grid.Column="1" Grid.Row="2"/>
+
+                                <Label Text="TELEFONO" Grid.Column="0" Grid.Row="3"/>
+                                <Label Text="{Binding Telefono}" Grid.Column="1" Grid.Row="3"/>
+
+                                <Label Text="CARRERA" Grid.Column="0" Grid.Row="4"/>
+                                <Label Text="{Binding Carrera}" Grid.Column="1" Grid.Row="4" />
+                              
+
+
+                                <Label Text="SEMESTRE" Grid.Column="0" Grid.Row="5"/>
+                                <Label Text="{Binding Semestre}" Grid.Column="1" Grid.Row="5"/>
+
+                                <Label Text="MATRICUla" Grid.Column="0" Grid.Row="6"/>
+                                <Label Text="{Binding Matricula}" Grid.Column="1" Grid.Row="6"/>
+
+                                <Label Text="CORREO" Grid.Column="0" Grid.Row="7"/>
+                                <Label Text="{Binding Correo}" Grid.Column="1" Grid.Row="7"/>
+
+                                <Label Text="GITHUB" Grid.Column="0" Grid.Row="8"/>
+                                <Label Text="{Binding Github}" Grid.Column="1" Grid.Row="8"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+                
+            </ListView>
+            <Button Text="➕ Insertar nuevo registro" Clicked="Insertar_Clicked"/>
+            <Button Text="👈 Inicio" Clicked="inicio_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
