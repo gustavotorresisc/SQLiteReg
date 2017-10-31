@@ -21,23 +21,27 @@
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
+                
             </Grid.RowDefinitions>
-            
-            <Label Text="NOMBRE" Grid.Column="0" Grid.Row="0" />
-            <Entry x:Name="Entry_Nom" Grid.Column="1" Grid.Row="0" Placeholder="Ingresa tu nombre(s)"/>
 
-            <Label Text="APELLIDOS" Grid.Column="0" Grid.Row="1"/>
-            <Entry x:Name="Entry_Ape" Grid.Column="1" Grid.Row="1" Placeholder="Ingresa tus apellidos"/>
+            <Label Text="ID" Grid.Column="0" Grid.Row="0" />
+            <Entry x:Name="Entry_Id" Grid.Column="1" Grid.Row="0" IsEnabled="False"/>
 
-            <Label Text="DIRECCION" Grid.Column="0" Grid.Row="2"/>
-            <Entry x:Name="Entry_Dir" Grid.Column="1" Grid.Row="2" Placeholder="Ingresa tu direccion"/>
+            <Label Text="NOMBRE" Grid.Column="0" Grid.Row="1" />
+            <Entry x:Name="Entry_Nom" Grid.Column="1" Grid.Row="1" Placeholder="Ingresa tu nombre(s)"/>
 
-            <Label Text="TELEFONO" Grid.Column="0" Grid.Row="3"/>
-            <Entry x:Name="Entry_Tel" Grid.Column="1" Grid.Row="3" Keyboard="Numeric" Placeholder="Ingresa tu telefono celular"/>
+            <Label Text="APELLIDOS" Grid.Column="0" Grid.Row="2"/>
+            <Entry x:Name="Entry_Ape" Grid.Column="1" Grid.Row="2" Placeholder="Ingresa tus apellidos"/>
 
-            <Label Text="CARRERA" Grid.Column="0" Grid.Row="4"/>
+            <Label Text="DIRECCION" Grid.Column="0" Grid.Row="3"/>
+            <Entry x:Name="Entry_Dir" Grid.Column="1" Grid.Row="3" Placeholder="Ingresa tu direccion"/>
+
+            <Label Text="TELEFONO" Grid.Column="0" Grid.Row="4"/>
+            <Entry x:Name="Entry_Tel" Grid.Column="1" Grid.Row="4" Keyboard="Numeric" Placeholder="Ingresa tu telefono celular"/>
+
+            <Label Text="CARRERA" Grid.Column="0" Grid.Row="5"/>
             <!--<Entry x:Name="Entry_carr" Grid.Column="1" Grid.Row="4"/>-->
-            <Picker x:Name="picker" Grid.Column="1" Grid.Row="4" SelectedIndexChanged="picker_SelectedIndexChanged">
+            <Picker x:Name="picker" Grid.Column="1" Grid.Row="5" SelectedIndexChanged="picker_SelectedIndexChanged">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Ingenieria en Sistemas Computacionales</x:String>
@@ -51,9 +55,9 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="SEMESTRE" Grid.Column="0" Grid.Row="5"/>
+            <Label Text="SEMESTRE" Grid.Column="0" Grid.Row="6"/>
             <!--<Entry x:Name="Entry_Sem" Grid.Column="1" Grid.Row="5"/>-->
-            <Picker x:Name="picker_semestre" Grid.Column="1" Grid.Row="5" SelectedIndexChanged="picker_semestre_SelectedIndexChanged" >
+            <Picker x:Name="picker_semestre" Grid.Column="1" Grid.Row="6" SelectedIndexChanged="picker_semestre_SelectedIndexChanged" >
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>1</x:String>
@@ -69,18 +73,18 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="MATRICULA" Grid.Column="0" Grid.Row="6"/>
-            <Entry x:Name="Entry_Matric" Grid.Column="1" Grid.Row="6" Keyboard="Numeric" Placeholder="Ingresa tu matricula"/>
+            <Label Text="MATRICULA" Grid.Column="0" Grid.Row="7"/>
+            <Entry x:Name="Entry_Matric" Grid.Column="1" Grid.Row="7" Keyboard="Numeric" Placeholder="Ingresa tu matricula"/>
             
 
-            <Label Text="CORREO" Grid.Column="0" Grid.Row="7"/>
-            <Entry x:Name="Entry_Cor" Grid.Column="1" Grid.Row="7" Keyboard="Email" Placeholder="Ingresa tu email"/>
+            <Label Text="CORREO" Grid.Column="0" Grid.Row="8"/>
+            <Entry x:Name="Entry_Cor" Grid.Column="1" Grid.Row="8" Keyboard="Email" Placeholder="Ingresa tu email"/>
 
-            <Label Text="GITHUB" Grid.Column="0" Grid.Row="8"/>
-            <Entry x:Name="Entry_Git" Grid.Column="1" Grid.Row="8" Placeholder="Ingresa tu git hub"/>
+            <Label Text="GITHUB" Grid.Column="0" Grid.Row="9"/>
+            <Entry x:Name="Entry_Git" Grid.Column="1" Grid.Row="9" Placeholder="Ingresa tu git hub"/>
 
-            <Button Text="Insertar_Registro" Grid.Column="0" Grid.Row="9" Clicked="Insertar_Clicked" />
-            <Button Text="Inicio" Grid.Column="0" Grid.Row="10" Clicked="inicio_Clicked" />
+            <Button Text="Insertar_Registro" Grid.Column="0" Grid.Row="10" Clicked="Insertar_Clicked" />
+            <Button Text="Inicio" Grid.Column="0" Grid.Row="11" Clicked="inicio_Clicked" />
             
         </Grid>
         

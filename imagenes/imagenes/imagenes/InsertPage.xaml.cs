@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using SQLitePCL;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microsoft.WindowsAzure.MobileServices;
+using Newtonsoft.Json;
+using System.Collections.ObjectModel;
 
 namespace imagenes
 {
@@ -15,74 +18,53 @@ namespace imagenes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class InsertPage : ContentPage
     {
-      /*  Dictionary<string, Color> nameToColor = new Dictionary<string, Color>
-        {
-              { "Sistemas", Color.Aqua },
-            { "Biologia", Color.Black },
-        };*/
+        public ObservableCollection<_13090371> Items { get; set; }
+        public static MobileServiceClient Cliente;
+        public static IMobileServiceTable<_13090371> Tabla;
 
-        SQLiteConnection database;
+        /*  Dictionary<string, Color> nameToColor = new Dictionary<string, Color>
+          {
+                { "Sistemas", Color.Aqua },
+              { "Biologia", Color.Black },
+          };*/
+
+        //SQLiteConnection database;
         string datoPiker;
         string datoPiker_sem;
         public InsertPage()
         {
             InitializeComponent();
-            string db;
-            db = DependencyService.Get<isqlite>().GetLocalFilePath("TESHDB0.db");
-            database = new SQLiteConnection(db);
-            database.CreateTable<TESHDatos>();
+            Cliente = new MobileServiceClient(AzureConnection.AzuteURL);
+            Tabla = Cliente.GetTable<_13090371>();
+            //string db;
+            //db = DependencyService.Get<isqlite>().GetLocalFilePath("TESHDB0.db");
+            //database = new SQLiteConnection(db);
+            //database.CreateTable<_13090371>();
 
-            //var monkeyList = new List<string>();
-            //monkeyList.Add("Baboon");
-            //monkeyList.Add("Capuchin Monkey");
-            //monkeyList.Add("Blue Monkey");
-            //monkeyList.Add("Squirrel Monkey");
-            //monkeyList.Add("Golden Lion Tamarin");
-            //monkeyList.Add("Howler Monkey");
-            //monkeyList.Add("Japanese Macaque");
 
-            //var picker = new Picker { Title = "Select a monkey" };
-            //picker.ItemsSource = monkeyList;
         }
 
-        /* Picker carrera = new Picker
-         {
-             //Title = "Carrera",
-
-             VerticalOptions = LayoutOptions.CenterAndExpand
-         };*/
-
-        /* foreach (string colorName in nameToColor.Keys)
-         {
-             picker.Items.Add(colorName);
-         }
-
-      this.Content = new StackLayout
-      {
-              Children =
-             {
-               // header,
-                 picker,
-                // boxView
-             }
-      };*/
-        private void Insertar_Clicked(object sender, EventArgs e)
+       
+        private async void Insertar_Clicked(object sender, EventArgs e)
         {
-            var datos = new TESHDatos
+            var datos = new _13090371
             {
+                Id= Entry_Id.Text,
                 Nombre = Entry_Nom.Text,
                 Apellidos = Entry_Ape.Text,
                 Direccion = Entry_Dir.Text,
                 Telefono = Entry_Tel.Text,
                 Carrera = datoPiker,
-               // Carrera = Entry_carr.Text,
                 Semestre = datoPiker_sem,
                 Matricula = Entry_Matric.Text ,
                 Correo = Entry_Cor.Text,
                 Github = Entry_Git.Text,
             };
-            database.Insert(datos);
-            Navigation.PushModalAsync(new DetailPageBD());
+            await InsertPage.Tabla.InsertAsync(datos);
+            await Navigation.PushModalAsync(new DetailPageBD());
+            //database.Insert(datos);
+            //Navigation.PushModalAsync(new DetailPageBD());
+
 
         }
 

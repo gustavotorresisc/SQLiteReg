@@ -2,15 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="imagenes.SelectedPage">
-    
-    <ContentPage.Content><!--chido-->
+
+    <ContentPage.Content>
         <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100"></ColumnDefinition>
                         <ColumnDefinition ></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                <RowDefinition Height="50" ></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
                 <RowDefinition Height="50"></RowDefinition>
                 <RowDefinition Height="50"></RowDefinition>
                 <RowDefinition Height="50"></RowDefinition>
@@ -21,22 +23,25 @@
                 <RowDefinition Height="50"></RowDefinition>
                 <RowDefinition Height="50"></RowDefinition>
             </Grid.RowDefinitions>
-            
-            <Label Text="Nombre" Grid.Column="0" Grid.Row="0" VerticalOptions="Center"></Label>
-            <Entry x:Name="Entry_Nom" Text="{Binding Nombre}" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" IsEnabled="True"/>
 
-            <Label Text="Apellidos" Grid.Column="0" Grid.Row="1" VerticalOptions="Center"></Label>
-            <Entry x:Name="Entry_Ape" Text="{Binding Apellidos}" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" />
+            <Label Text="Id" Grid.Column="0" Grid.Row="0" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Id" Text="{Binding Id}" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" IsEnabled="False"/>
 
-            <Label Text="Direccion" Grid.Column="0" Grid.Row="2" VerticalOptions="Center"></Label>
-            <Entry x:Name="Entry_Dir" Text="{Binding Direccion}" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" />
+            <Label Text="Nombre" Grid.Column="0" Grid.Row="1" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Nom" Text="{Binding Nombre}" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" IsEnabled="True"/>
 
-            <Label Text="Telefono" Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
-            <Entry x:Name="Entry_Telef" Text="{Binding Telefono}" Grid.Column="1" Grid.Row="3" VerticalOptions="Center" Keyboard="Numeric"/>
+            <Label Text="Apellidos" Grid.Column="0" Grid.Row="2" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Ape" Text="{Binding Apellidos}" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" />
 
-            <Label Text="Carrera" Grid.Column="0" Grid.Row="4" VerticalOptions="Center"/>
+            <Label Text="Direccion" Grid.Column="0" Grid.Row="3" VerticalOptions="Center"></Label>
+            <Entry x:Name="Entry_Dir" Text="{Binding Direccion}" Grid.Column="1" Grid.Row="3" VerticalOptions="Center" />
+
+            <Label Text="Telefono" Grid.Column="0" Grid.Row="4" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Telef" Text="{Binding Telefono}" Grid.Column="1" Grid.Row="4" VerticalOptions="Center" Keyboard="Numeric"/>
+
+            <Label Text="Carrera" Grid.Column="0" Grid.Row="5" VerticalOptions="Center"/>
             <!--<Entry x:Name="Entry_Carr" Text="{Binding Carrera}" Grid.Column="1" Grid.Row="4" VerticalOptions="Center"/>-->
-            <Picker x:Name="picker" Grid.Column="1" Grid.Row="4" SelectedIndexChanged="picker_SelectedIndexChanged">
+            <Picker x:Name="picker" Grid.Column="1" Grid.Row="5" SelectedIndexChanged="picker_SelectedIndexChanged"  SelectedItem="{Binding Carrera}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Ingenieria en Sistemas Computacionales</x:String>
@@ -50,9 +55,9 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="Semestre" Grid.Column="0" Grid.Row="5" VerticalOptions="Center"/>
+            <Label Text="Semestre" Grid.Column="0" Grid.Row="6" VerticalOptions="Center"/>
             <!--<Entry x:Name="Entry_Semestre" Text="{Binding Semestre}" Grid.Column="1" Grid.Row="5" VerticalOptions="Center"/>-->
-            <Picker x:Name="picker_semestre" Grid.Column="1" Grid.Row="5" SelectedIndexChanged="picker_semestre_SelectedIndexChanged">
+            <Picker x:Name="picker_semestre" Grid.Column="1" Grid.Row="6" SelectedIndexChanged="picker_semestre_SelectedIndexChanged" SelectedItem="{Binding Semestre}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>1</x:String>
@@ -68,19 +73,18 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="Matricula" Grid.Column="0" Grid.Row="6" VerticalOptions="Center"/>
-            <Entry x:Name="Entry_Matric" Text="{Binding Matricula}" Grid.Column="1" Grid.Row="6" VerticalOptions="Center" Keyboard="Numeric"/>
-            
-            
-            <Label Text="Correo" Grid.Column="0" Grid.Row="7" VerticalOptions="Center"/>
-            <Entry x:Name="Entry_Corre" Text="{Binding Correo}" Grid.Column="1" Grid.Row="7" VerticalOptions="Center" Keyboard="Email"/>
+            <Label Text="Matricula" Grid.Column="0" Grid.Row="7" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Matric" Text="{Binding Matricula}" Grid.Column="1" Grid.Row="7" VerticalOptions="Center" Keyboard="Numeric"/>
+                        
+            <Label Text="Correo" Grid.Column="0" Grid.Row="8" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Corre" Text="{Binding Correo}" Grid.Column="1" Grid.Row="8" VerticalOptions="Center" Keyboard="Email"/>
 
-            <Label Text="Github" Grid.Column="0" Grid.Row="8" VerticalOptions="Center"/>
-            <Entry x:Name="Entry_Git" Text="{Binding Github}" Grid.Column="1" Grid.Row="8" VerticalOptions="Center"/>
+            <Label Text="Github" Grid.Column="0" Grid.Row="9" VerticalOptions="Center"/>
+            <Entry x:Name="Entry_Git" Text="{Binding Github}" Grid.Column="1" Grid.Row="9" VerticalOptions="Center"/>
 
-
-            <Button x:Name="ButtonActualizar" Text="Actualizar Registro" Clicked="ButtonActualizar_Clicked" Grid.Column="0" Grid.Row="9"/>
-            <Button x:Name="ButtonEliminar" Text="Eliminar Registro" Clicked="ButtonEliminar_Clicked" Grid.Column="1" Grid.Row="9"/>
+            <Button x:Name="ButtonActualizar" Text="Actualizar Registro" Clicked="ButtonActualizar_Clicked" Grid.Column="0" Grid.Row="10"/>
+            <Button x:Name="ButtonEliminar" Text="Eliminar Registro" Clicked="ButtonEliminar_Clicked" Grid.Column="1" Grid.Row="10"/>
+            <Button x:Name="ButtonDeleted" Text="Restablecer Registro" Clicked="ButtonDeleted_Clicked" Grid.Column="0" Grid.Row="11"/>
         </Grid>
     </ContentPage.Content>
        

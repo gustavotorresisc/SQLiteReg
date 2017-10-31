@@ -20,7 +20,7 @@ namespace imagenes
             string db;
             db = DependencyService.Get<isqlite>().GetLocalFilePath("TESHDB0.db");
             database = new SQLiteAsyncConnection(db);
-            database.CreateTableAsync<TESHDatos>().Wait();
+            database.CreateTableAsync<_13090371>().Wait();
             //chido]
             /* var elemento = new TESHDatos
              {

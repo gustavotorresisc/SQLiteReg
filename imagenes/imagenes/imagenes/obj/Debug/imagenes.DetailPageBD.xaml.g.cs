@@ -11,8 +11,7 @@
 namespace imagenes {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Gustavo\\Desktop\\respaldo practica antes de\\imagenes\\imagenes\\imagenes\\De" +
-        "tailPageBD.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Gustavo\\Desktop\\Proyecto\\imagenes\\imagenes\\imagenes\\DetailPageBD.xaml")]
     public partial class DetailPageBD : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
