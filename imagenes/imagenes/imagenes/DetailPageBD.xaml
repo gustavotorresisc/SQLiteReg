@@ -5,7 +5,7 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Usuarios Registrados" FontSize="50" BackgroundColor="Red" TextColor="Azure"/>
+            <Label Text="Usuarios Registrados" VerticalOptions="Center" HorizontalOptions="Center" FontSize="50" BackgroundColor="Green" TextColor="Azure"/>
             <ListView ItemsSource="{Binding Items}" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -69,9 +69,10 @@
                 
                 
             </ListView>
-            <Button Text="➕ Insertar nuevo registro" Clicked="Insertar_Clicked"/>
+            <Button x:Name="Boton_Insertar" Text="➕ Insertar nuevo registro" Clicked="Insertar_Clicked"/>
             <Button Text="👈 Inicio" Clicked="inicio_Clicked"/>
             <Button Text="Iniciar Session" Clicked="login_Clicked"/>
+            <Button Text="Mostrar Eliminados" Clicked="MostrarElominados_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

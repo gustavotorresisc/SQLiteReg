@@ -11,10 +11,9 @@ using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 
+
 namespace imagenes
 {
-
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class InsertPage : ContentPage
     {
@@ -22,29 +21,22 @@ namespace imagenes
         public static MobileServiceClient Cliente;
         public static IMobileServiceTable<_13090371> Tabla;
 
-        /*  Dictionary<string, Color> nameToColor = new Dictionary<string, Color>
-          {
-                { "Sistemas", Color.Aqua },
-              { "Biologia", Color.Black },
-          };*/
-
         //SQLiteConnection database;
+        public static MobileServiceUser usuario;
         string datoPiker;
         string datoPiker_sem;
         public InsertPage()
+
         {
             InitializeComponent();
             Cliente = new MobileServiceClient(AzureConnection.AzuteURL);
-            Tabla = Cliente.GetTable<_13090371>();
+            //Tabla = Cliente.GetTable<_13090371>();
+
             //string db;
             //db = DependencyService.Get<isqlite>().GetLocalFilePath("TESHDB0.db");
             //database = new SQLiteConnection(db);
             //database.CreateTable<_13090371>();
-
-
-        }
-
-       
+        }       
         private async void Insertar_Clicked(object sender, EventArgs e)
         {
             var datos = new _13090371
@@ -60,19 +52,20 @@ namespace imagenes
                 Correo = Entry_Cor.Text,
                 Github = Entry_Git.Text,
             };
-            await InsertPage.Tabla.InsertAsync(datos);
-            await Navigation.PushModalAsync(new DetailPageBD());
+            await DetailPageBD.Tabla.InsertAsync(datos);
+            await DisplayAlert("","agregado","OK");
+            //await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
+            //await Navigation.PushAsync(new DetailPageBD());
+            //await Navigation.PushAsync();
             //database.Insert(datos);
             //Navigation.PushModalAsync(new DetailPageBD());
-
-
         }
 
         private void inicio_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new MainPage());
+            Navigation.PushAsync(new MainPage());
         }
-
 
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
         {

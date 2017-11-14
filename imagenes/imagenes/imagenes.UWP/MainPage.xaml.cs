@@ -13,19 +13,19 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
-using System.Threading.Tasks;
+using System.Threading.Tasks;//tareas en segundo plano
 using Windows.UI.Popups;//ventanas emergentes
 
 namespace imagenes.UWP
 {
     public sealed partial class MainPage: ISQLAzure
     {
-        private MobileServiceUser usuario;
+        public MobileServiceUser usuario;
         public async Task<MobileServiceUser> Authenticate()
         {
             try
             {//tipo de ddato con el que le vamos a dar autenticacion al usuario MobileServiceAuthenticationProvider
-                usuario = await imagenes.DetailPageBD.Cliente.LoginAsync(MobileServiceAuthenticationProvider.MicrosoftAccount, true);
+                usuario = await imagenes.DetailPageBD.Cliente.LoginAsync(MobileServiceAuthenticationProvider.MicrosoftAccount, "tesh.azurewebsites.net");
                 if (usuario != null)
                 {
                     await new MessageDialog(usuario.UserId, "Bienvenido").ShowAsync();

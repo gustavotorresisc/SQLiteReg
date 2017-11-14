@@ -9,7 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json;
-//chido
+
 namespace imagenes
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -17,11 +17,9 @@ namespace imagenes
     {
         public ObservableCollection<_13090371> Items { get; set; }
         //SQLiteConnection database;
-
-
         public static MobileServiceClient Cliente;
         public static IMobileServiceTable<_13090371>Tabla;
-        MobileServiceUser usuario;
+        public static MobileServiceUser usuario;
 
         public DetailPageBD()
         {
@@ -29,8 +27,8 @@ namespace imagenes
 
             Cliente = new MobileServiceClient(AzureConnection.AzuteURL);
             Tabla = Cliente.GetTable<_13090371>();
-            Tabla.IncludeDeleted();
-            LeerTabla();
+            //Tabla.IncludeDeleted();
+            //LeerTabla();
            // Tabla.UndeleteAsync(nombre);
 
             //string db;
@@ -51,13 +49,45 @@ namespace imagenes
 
         private async void login_Clicked(object sender, EventArgs e)
         {
-            usuario = await App.Authenticator.Authenticate();
+            /*
             if (App.Authenticator != null)
             {
+                usuario = await App.Authenticator.Authenticate();
                 if (usuario != null)
                 {
                     await DisplayAlert("Usuario Autenticado", usuario.UserId, "Okey");
+                    await Navigation.PushModalAsync(new InsertPage());
+                    //LeerTabla();
+                    //if (usuario.UserId != "Administrador(Id)")
                 }
+                if (usuario == null)
+                {
+                    Boton_Insertar.IsVisible = false;
+                    Boton_Insertar.IsEnabled = false;
+
+                }
+                
+            }*/
+            try
+            {
+                if (App.Authenticator != null)
+                {
+                    usuario = await App.Authenticator.Authenticate();
+
+                    if (usuario != null)
+                    {
+                        await DisplayAlert("Usuario Autenticado", usuario.UserId, "ok");
+                        await Navigation.PushModalAsync(new InsertPage());
+                    }
+                    if (usuario == null)
+                    {
+                        await DisplayAlert("", "Usuario No Autenticado", "ok");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "ok");
             }
         }
 
@@ -65,31 +95,19 @@ namespace imagenes
         {
             if (e.SelectedItem == null)
                 return;
-            await Navigation.PushModalAsync(new SelectedPage(e.SelectedItem as _13090371));
+            await Navigation.PushAsync(new SelectedPage(e.SelectedItem as _13090371));
         }
-
         private void Insertar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new InsertPage());
+            Navigation.PushAsync(new InsertPage());
         }
-
         private void inicio_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new MainPage());
+            Navigation.PushAsync(new MainPage());
         }
+        private void MostrarElominados_Clicked(object sender, EventArgs e)
+        {
 
-
-
-        //private void Carrera_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    var carrera = (Picker)sender;
-        //    int selectedIndex = carrera.SelectedIndex;
-
-        //    if (selectedIndex != -1)
-        //    {
-        //        carrera_piker = (string)carrera.ItemsSource[selectedIndex];
-
-        //    }
-        //}
+        }
     }
 }

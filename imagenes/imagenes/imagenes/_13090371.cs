@@ -11,7 +11,7 @@ using SQLite;
 
 namespace imagenes
 {
-    [Table("_13090371")]
+    //[Table("_13090371")]
     public class _13090371
     {
             string id;

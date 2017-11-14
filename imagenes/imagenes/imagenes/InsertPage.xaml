@@ -85,6 +85,7 @@
 
             <Button Text="Insertar_Registro" Grid.Column="0" Grid.Row="10" Clicked="Insertar_Clicked" />
             <Button Text="Inicio" Grid.Column="0" Grid.Row="11" Clicked="inicio_Clicked" />
+            <!--<Button Text="Iniciar Session" Clicked="login_Clicked" Grid.Column="1" Grid.Row="11"/>-->
             
         </Grid>
         

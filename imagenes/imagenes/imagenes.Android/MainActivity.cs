@@ -8,7 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
-using Android.Service.Notification;
+using Android.Service.Notification;//crear alertas
 
 namespace imagenes.Droid
 {
@@ -22,10 +22,10 @@ namespace imagenes.Droid
             var message = string.Empty;
             try
             {//tipo de ddato con el que le vamos a dar autenticacion al usuario MobileServiceAuthenticationProvider
-                usuario = await imagenes.DetailPageBD.Cliente.LoginAsync(this,MobileServiceAuthenticationProvider.MicrosoftAccount,"https://tesh.azurebsites.net/.auth/login/facebook/callback");
+                usuario = await imagenes.DetailPageBD.Cliente.LoginAsync(this,MobileServiceAuthenticationProvider.MicrosoftAccount,"https://tesh.azurewebsites.net/.auth/login/microsoftaccount/callback");
                 if (usuario != null)
                 {
-                    message = string.Format("Usuario Autenticado{0}.", usuario.UserId);
+                    message = string.Format("Usuario Autenticado {0}.", usuario.UserId);
                     //await new (usuario.UserId, "Bienvenido").ShowAsync();
                     //await new MessageDialog(user.MobileServiceAuthenticationToken, "Token").ShowAsync();
                 }

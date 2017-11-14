@@ -19,7 +19,7 @@ namespace imagenes
         {
             InitializeComponent();
 
-            MainPage = new imagenes.MainPage();
+            MainPage = new NavigationPage(new MainPage());// imagenes.MainPage();
         }
 
         protected override void OnStart()

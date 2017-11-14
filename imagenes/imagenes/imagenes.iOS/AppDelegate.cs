@@ -21,7 +21,7 @@ namespace imagenes.iOS
             var message = string.Empty;
             try
             {//tipo de ddato con el que le vamos a dar autenticacion al usuario MobileServiceAuthenticationProvider
-                usuario = await imagenes.DetailPageBD.Cliente.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,MobileServiceAuthenticationProvider.Facebook, "https://tesh.azurebsites.net/.auth/login/facebook/callback");
+                usuario = await imagenes.DetailPageBD.Cliente.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController,MobileServiceAuthenticationProvider.MicrosoftAccount, "https://tesh.azurewebsites.net/.auth/login/microsoftaccount/callback");
                 if (usuario != null)
                 {
                     message = string.Format("usuario autenticado {0}.", usuario.UserId);
@@ -34,7 +34,9 @@ namespace imagenes.iOS
                 message = ex.Message;
                 //await new MessageDialog(ex.Message, "Error Message").ShowAsync();
             }
-            UIAlertView avAlert = new UIAlertView("resultado de autenticacion", message, null, "ok", null);
+            IUIAlertViewDelegate iUIAlert = null;
+            //UIAlertView avAlert = new UIAlertView("resultado de autenticacion", message, null, "ok", null);
+            UIAlertView avAlert = new UIAlertView("resultado de autenticacion", message, iUIAlert, "ok", null);
             avAlert.Show();
             return usuario;
         }

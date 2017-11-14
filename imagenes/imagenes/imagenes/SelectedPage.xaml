@@ -85,6 +85,7 @@
             <Button x:Name="ButtonActualizar" Text="Actualizar Registro" Clicked="ButtonActualizar_Clicked" Grid.Column="0" Grid.Row="10"/>
             <Button x:Name="ButtonEliminar" Text="Eliminar Registro" Clicked="ButtonEliminar_Clicked" Grid.Column="1" Grid.Row="10"/>
             <Button x:Name="ButtonDeleted" Text="Restablecer Registro" Clicked="ButtonDeleted_Clicked" Grid.Column="0" Grid.Row="11"/>
+            
         </Grid>
     </ContentPage.Content>
        

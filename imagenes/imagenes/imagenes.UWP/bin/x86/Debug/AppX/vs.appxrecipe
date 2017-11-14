@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>82E5B5B12FD69C525A38DAFE9BDD4017C74DE2DE5487FEDE12A3621716EB2B03</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>CBB3E4F5762BA40A6C51903FCBF29CC503D041365EC058F0BA07D5E76FA9A06B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f870b54c-bfef-41d9-8a65-87f3839bd80a_1.0.0.0_x86__jg5rmz0h9x2g0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f870b54c-bfef-41d9-8a65-87f3839bd80a_jg5rmz0h9x2g0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f870b54c-bfef-41d9-8a65-87f3839bd80a</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-31T05:35:29.222</Modified>
+      <Modified>2017-11-14T19:23:51.551</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes.UWP\bin\x86\Debug\imagenes.UWP.exe">
       <PackagePath>entrypoint\imagenes.UWP.exe</PackagePath>
-      <Modified>2017-10-31T05:35:27.605</Modified>
+      <Modified>2017-11-14T19:23:50.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gustavo\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -573,7 +573,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes\bin\Debug\imagenes.dll">
       <PackagePath>imagenes.dll</PackagePath>
-      <Modified>2017-10-31T05:35:23.094</Modified>
+      <Modified>2017-11-14T19:23:47.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes\bin\Debug\imagenes.dll.config">
       <PackagePath>imagenes.dll.config</PackagePath>
@@ -752,11 +752,11 @@
     <AppxPackagedFile Include="C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-25T18:14:06.528</Modified>
+      <Modified>2017-11-13T22:43:40.260</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gustavo\Desktop\Proyecto\imagenes\imagenes\imagenes.UWP\bin\x86\Debug\Core\imagenes.UWP.exe">
       <PackagePath>imagenes.UWP.exe</PackagePath>
-      <Modified>2017-10-31T05:35:29.192</Modified>
+      <Modified>2017-11-14T19:23:51.547</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

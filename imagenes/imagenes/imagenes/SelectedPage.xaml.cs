@@ -27,12 +27,24 @@ namespace imagenes
         public SelectedPage(object selectedItem)
         {
 
+            
+
             InitializeComponent();
             Cliente = new MobileServiceClient(AzureConnection.AzuteURL);
             Tabla = Cliente.GetTable<_13090371>();
             Tabla.IncludeDeleted();
             //LeerTabla();
             //Tabla.UndeleteAsync(nombre);
+            //if (DetailPageBD.usuario.UserId != "Administrador(Id)")
+                if (DetailPageBD.usuario == null)
+            {
+                Entry_Nom.IsEnabled = false;
+                Entry_Ape.IsEnabled = false;
+                ButtonActualizar.IsVisible = false;
+                ButtonEliminar.IsVisible = false;
+                ButtonActualizar.IsEnabled = false;
+                ButtonEliminar.IsEnabled = false;
+            }
 
             var datos = selectedItem as _13090371;
             BindingContext = datos;
@@ -57,7 +69,8 @@ namespace imagenes
                 Github = Entry_Git.Text,
             };
             await DetailPageBD.Tabla.UpdateAsync(datos);
-            await Navigation.PushModalAsync(new DetailPageBD());
+            //await Navigation.PushModalAsync(new DetailPageBD());
+            await Navigation.PopAsync();
             //database.Update(datos);
             //Navigation.PushModalAsync(new DetailPageBD());
             //DisplayAlert("", "Registro actualzado ✔", "Aceptar");
@@ -79,7 +92,7 @@ namespace imagenes
                 Github = Entry_Git.Text,
             };
             await DetailPageBD.Tabla.DeleteAsync(datos);
-            await Navigation.PushModalAsync(new DetailPageBD());
+            await Navigation.PopAsync();
             //database.Delete(datos);
             //Navigation.PushModalAsync(new DetailPageBD());
             //DisplayAlert("", "Registro Eliminado ✔", "Aceptar");
